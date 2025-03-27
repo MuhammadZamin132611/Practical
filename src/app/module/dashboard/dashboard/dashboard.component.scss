@@ -1,0 +1,29 @@
+header {
+    background-color: black;
+    color: white;
+    padding: 5px;
+
+    .menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        ul {
+            display: flex;
+            gap: 10px;
+            cursor: pointer;
+
+            li {
+                list-style: none;
+                font-size: 22px;
+            }
+        }
+    }
+}
+
+.active{
+    background-color: white;
+    color: blue;
+    padding: 3px 5px;
+    border-radius: 5px;
+}

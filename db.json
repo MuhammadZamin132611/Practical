@@ -1,0 +1,25 @@
+{
+  "employee": [
+    {
+      "id": "d748",
+      "name": "zamin",
+      "email": "zamin@gmail.com",
+      "phone": "1234567890",
+      "address": "Delhi"
+    },
+    {
+      "id": "a106",
+      "name": "ram",
+      "email": "ram@gmail.com",
+      "phone": "1234567890",
+      "address": "India"
+    },
+    {
+      "id": "dd50",
+      "name": "shaym",
+      "email": "sahym@gmail.com",
+      "phone": "9087654321",
+      "address": "Delhi"
+    }
+  ]
+}

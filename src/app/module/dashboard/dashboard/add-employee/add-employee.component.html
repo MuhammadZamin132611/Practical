@@ -1,0 +1,37 @@
+<div>
+    <h1>Add Employee</h1>
+
+    <form #form="ngForm" (ngSubmit)="onSubmit(form)">
+        <div>
+            <label for="name">Name</label>
+            <input class="input" type="text" name="name" required ngModel #name="ngModel" id="name"
+                placeholder="enter youer name">
+            <div class="error" *ngIf="name.touched && name.invalid">Enter your name.</div>
+        </div>
+        <div>
+            <label for="email">Email</label>
+            <input class="input" type="text" name="email" required ngModel email #email="ngModel" id="email"
+                placeholder="enter youer email">
+            <div class="error" *ngIf="email.touched && email.invalid">
+                <div *ngIf="email.errors?.['required']">Enter your email.</div>
+                <div *ngIf="email.errors?.['email']">Enter Valid email.</div>
+            </div>
+
+        </div>
+        <div>
+            <label for="phone">Phone</label>
+            <input class="input" type="text" name="phone" required ngModel #phone="ngModel" id="name"
+                placeholder="enter youer phone">
+            <div class="error" *ngIf="phone.touched && phone.invalid">Enter your phone number.</div>
+        </div>
+        <div>
+            <label for="address">Address</label>
+            <input class="input" type="text" name="address" required ngModel #address="ngModel" id="address"
+                placeholder="enter youer name">
+            <div class="error" *ngIf="address.touched && address.invalid">Enter your address.</div>
+        </div>
+        <div>
+            <button type="submit">Add Employee</button>
+        </div>
+    </form>
+</div>
