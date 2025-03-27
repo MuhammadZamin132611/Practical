@@ -8,18 +8,18 @@
       "address": "Delhi"
     },
     {
-      "id": "a106",
-      "name": "ram",
-      "email": "ram@gmail.com",
-      "phone": "1234567890",
-      "address": "India"
+      "name": "Ram",
+      "email": "Shayam@gmail.com",
+      "phone": "123456789",
+      "address": "Delhi south",
+      "id": "2b02"
     },
     {
-      "id": "dd50",
-      "name": "shaym",
-      "email": "sahym@gmail.com",
+      "id": "05ed",
+      "name": "Shaym",
+      "email": "shyam@gmail.com",
       "phone": "9087654321",
-      "address": "Delhi"
+      "address": "Nepal"
     }
   ]
 }

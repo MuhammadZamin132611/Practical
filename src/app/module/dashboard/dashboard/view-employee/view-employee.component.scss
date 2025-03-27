@@ -1,0 +1,80 @@
+/* Table Styling */
+.employee-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 16px;
+    text-align: left;
+}
+
+/* Table Borders */
+.employee-table th,
+.employee-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+/* Header Styling */
+.employee-table thead {
+    background-color: #f4f4f4;
+}
+
+/* Buttons Styling */
+.edit-btn,
+.delete-btn {
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.edit-btn {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.delete-btn {
+    background-color: #e74c3c;
+    color: white;
+}
+
+/* Responsive Table */
+// @media screen and (max-width: 768px) {
+//     .employee-table {
+//         font-size: 14px;
+//     }
+
+//     .employee-table thead {
+//         display: none;
+//     }
+
+//     .employee-table tbody,
+//     .employee-table tr,
+//     .employee-table td {
+//         display: block;
+//         width: 100%;
+//     }
+
+//     .employee-table tr {
+//         margin-bottom: 10px;
+//         border: 1px solid #ddd;
+//     }
+
+//     .employee-table td {
+//         text-align: right;
+//         padding-left: 50%;
+//         position: relative;
+//     }
+
+//     .employee-table td::before {
+//         content: attr(data-label);
+//         position: absolute;
+//         left: 10px;
+//         font-weight: bold;
+//         text-align: left;
+//     }
+// }
+
+.main-class{
+    padding: 20px;
+}

@@ -1,29 +1,85 @@
+/* Header Styling */
 header {
     background-color: black;
     color: white;
-    padding: 5px;
-
-    .menu {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-
-        ul {
-            display: flex;
-            gap: 10px;
-            cursor: pointer;
-
-            li {
-                list-style: none;
-                font-size: 22px;
-            }
-        }
-    }
+    padding: 10px 20px;
 }
 
-.active{
+/* Flexbox for Desktop */
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* Logo */
+.logo {
+    cursor: pointer;
+}
+
+/* Navigation Menu */
+nav {
+    display: flex;
+}
+
+/* Navigation Links */
+ul {
+    display: flex;
+    gap: 15px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    font-size: 18px;
+    cursor: pointer;
+    padding: 5px 10px;
+}
+
+/* Active Link */
+.active {
     background-color: white;
     color: blue;
-    padding: 3px 5px;
+    padding: 3px 8px;
     border-radius: 5px;
+}
+
+/* Hamburger Menu (Hidden by Default) */
+.hamburger {
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+
+    nav {
+        display: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    nav.show {
+        display: block;
+    }
+
+    ul {
+        flex-direction: column;
+        gap: 5px;
+        background: black;
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+    ul li {
+        font-size: 20px;
+        padding: 10px;
+        display: block;
+    }
 }

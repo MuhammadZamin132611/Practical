@@ -1,17 +1,26 @@
 <header>
     <div class="menu">
-        <div routerLink="/">
+        <div routerLink="/" class="logo">
             <h1>Dashboard</h1>
             <p>Welcome to the dashboard</p>
         </div>
-        <div>
-            <ul>
-                <li routerLink="/add-employee" routerLinkActive="active">Add Eployee</li>
-                <li routerLink="/view-employee" routerLinkActive="active">View Eployee</li>
-            </ul>
+        <div class="hamburger" (click)="toggleMenu()">
+            &#9776;
         </div>
+        <nav [ngClass]="{'show': isMenuOpen}">
+            <ul>
+                <li routerLink="/view-employee" routerLinkActive="active">View Employee</li>
+                <li routerLink="/add-employee" routerLinkActive="active">Add Employee</li>
+            </ul>
+        </nav>
     </div>
-
 </header>
 
+
 <router-outlet></router-outlet>
+
+
+
+<p style="padding: 20px; font-size: 18px;">
+    Use this command to run json file => json-server --watch db.json --port 3000
+</p>

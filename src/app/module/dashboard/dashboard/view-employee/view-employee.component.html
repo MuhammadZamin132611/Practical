@@ -1,5 +1,34 @@
-<div>
+<div class="main-class">
     <h1>View Employee</h1>
 
-    
+    <table class="employee-table">
+        <thead>
+            <tr>
+                <th>Sr. No</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Phone</th>
+                <th>Address</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            @for(employee of employeeData; track $index){
+
+            <tr>
+                <td>{{employeeData.indexOf(employee) + 1}}</td>
+                <td>{{employee.name}}</td>
+                <td>{{employee.email}}</td>
+                <td>{{employee.phone}}</td>
+                <td>{{employee.address}}</td>
+                <td>
+                    <div>
+                        <button (click)="update(employee.id)" class="edit-btn">Edit</button>
+                        <button (click)="delete(employee.id)" class="delete-btn">Delete</button>
+                    </div>
+                </td>
+            </tr>
+            }
+        </tbody>
+    </table>
 </div>

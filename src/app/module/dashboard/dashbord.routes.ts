@@ -14,6 +14,10 @@ export const dashboardRouter: Routes = [
                 loadComponent: () => import('./dashboard/view-employee/view-employee.component').then(m => m.ViewEmployeeComponent)
             },
             {
+                path: 'update/:id',
+                loadComponent: () => import('./dashboard/update-employee/update-employee.component').then(m => m.UpdateEmployeeComponent)
+            },
+            {
                 path: '',
                 redirectTo: 'view-employee',
                 pathMatch: 'full'
